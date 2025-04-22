@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/i.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>MP - Conversion</title>
+</head>
+<body>
+    <header>
+        <div class="container-general-header">
+            <div class="container-header-slogan">
+                <h1 id="name-project-header">Bro Code Mini-Projects</h1>
+                <p id="name-project">Conversion</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-project-general">
+            <div class="container-project-fourth containers">
+                <form action="">
+                    <h1 id="title-h1">Conversão de Temperatura</h1>
+                    <label for="textbox">Valor</label>
+                    <input type="number" name="number" id="textbox" value="0"><br>
+
+                    <input type="radio" name="conversion" id="toFahrenheit">
+                    <label for="toFahrenheit">Celsius para Fahrenheit</label><br>
+
+                    <input type="radio" name="conversion" id="toCelsius">
+                    <label for="toCelsius">Fahrenheit para Celsius</label><br>
+
+                    <button type="button" onclick="convert()" class="btn-cta btn-test">Converter</button>
+
+                    <p id="result" class="mt"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
